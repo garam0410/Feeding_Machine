@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#B2DFDB</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAbc">#00E676</color>
+    <string name="tab_text_1">일</string>
+    <string name="tab_text_2">월</string>
+    <string name="tab_text_3">화</string>
+    <string name="tab_text_4">수</string>
+    <string name="tab_text_5">목</string>
+    <string name="tab_text_6">금</string>
+    <string name="tab_text_7">토</string>
+</resources>

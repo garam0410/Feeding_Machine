@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPet">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="551dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1000dp">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:background="@mipmap/backscreen">
+
+                                        <ImageView
+                                            android:id="@+id/imageView"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            android:foregroundGravity="center"
+                                            app:layout_constraintBottom_toBottomOf="parent"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/profile"
+                                            tools:src="@tools:sample/avatars" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <TextView
+                                    android:id="@+id/Animal_Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#FFFFFF"
+                                    android:text="정보 없음"
+                                    android:textSize="40sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="24dp"
+                                    android:text="나이 : "
+                                    android:textSize="20sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                                <TextView
+                                    android:id="@+id/textView18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="24dp"
+                                    android:text="먹이 양 : "
+                                    android:textSize="20sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                                <Spinner
+                                    android:id="@+id/FoodSize"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40sp"
+                                    android:layout_marginStart="110dp"
+                                    android:layout_marginLeft="110dp"
+                                    android:layout_marginTop="17dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/age">
+
+                                </Spinner>
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="276dp"
+                                    android:text="성별 : "
+                                    android:textSize="20sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="110dp"
+                                    android:layout_marginLeft="110dp"
+                                    android:layout_marginTop="276dp"
+                                    android:gravity="center"
+                                    android:text="정보 없음"
+                                    android:textSize="20sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/age"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="110dp"
+                                    android:layout_marginLeft="110dp"
+                                    android:layout_marginTop="24dp"
+                                    android:text="정보 없음"
+                                    android:textSize="20sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+                                <Button
+                                    android:id="@+id/modify"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="80dp"
+                                    android:layout_marginRight="80dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:text="수정"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout3"
+                                    android:layout_width="330dp"
+                                    android:layout_height="350dp"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginLeft="32dp"
+                                    android:layout_marginBottom="80dp"
+                                    android:background="#FFFFFF"
+                                    app:layout_constraintBottom_toTopOf="@+id/modify"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    tools:ignore="MissingConstraints">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:id="@+id/constraintLayout"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                                <ListView
+                                                    android:id="@+id/breakfast"
+                                                    android:layout_width="110dp"
+                                                    android:layout_height="wrap_content"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="parent">
+
+                                                </ListView>
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                                <ListView
+                                                    android:id="@+id/lunch"
+                                                    android:layout_width="110dp"
+                                                    android:layout_height="wrap_content"
+                                                    app:layout_constraintStart_toStartOf="parent">
+
+                                                </ListView>
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:id="@+id/constraintLayout2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent">
+
+                                                <ListView
+                                                    android:id="@+id/dinner"
+                                                    android:layout_width="110dp"
+                                                    android:layout_height="wrap_content"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    tools:layout_editor_absoluteY="0dp">
+
+                                                </ListView>
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="80dp"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="아침"
+                                    android:textSize="24dp"
+                                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="점심"
+                                    android:textSize="24dp"
+                                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                                    app:layout_constraintEnd_toStartOf="@+id/textView8"
+                                    app:layout_constraintStart_toEndOf="@+id/textView" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="60dp"
+                                    android:layout_marginRight="60dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="저녁"
+                                    android:textSize="24dp"
+                                    app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textView10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="485dp"
+                                    android:text="일"
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:text="월"
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:text="화"
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:text="수"
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:text="목"
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:text="금"
+
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="24dp"
+                                    android:text="토"
+                                    android:textSize="18dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                                <Button
+                                    android:id="@+id/clear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="80dp"
+                                    android:layout_marginLeft="80dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:text="초기값"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

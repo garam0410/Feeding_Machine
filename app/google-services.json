@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "829055783900",
+    "firebase_url": "https://feeding-machine.firebaseio.com",
+    "project_id": "feeding-machine",
+    "storage_bucket": "feeding-machine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829055783900:android:3735bb4c4a89368e71b519",
+        "android_client_info": {
+          "package_name": "com.example.feeding_machine_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829055783900-qbjsk41dd5atoj7dpldvno8m113579q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.feeding_machine_2",
+            "certificate_hash": "4ce31b4fce90c87d28468b2b2c7748bc6d673b7e"
+          }
+        },
+        {
+          "client_id": "829055783900-mh5rc5g0lpi64cv6upptucl2ehsvfj70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIJbsQPSfqX9wBlHzynwP0gWGVYREHcrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829055783900-mh5rc5g0lpi64cv6upptucl2ehsvfj70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
